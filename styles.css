@@ -1,1 +1,76 @@
 /* Write styles here */
+/* Write styles here */
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+#my-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  background-color: black;
+  border-bottom: 1px solid white;
+  padding: 1rem;
+  font-size: 1rem;
+}
+#brand-name a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+#links a {
+  text-decoration: none;
+  color: white;
+  margin: 0 1rem;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 97px;
+  margin-left: 60px;
+  margin-top: 45px;
+}
+#container p {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  margin-left: 60px;
+  margin-top: 23px;
+}
+#content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+#image {
+  width: 700px;
+  height: 420px;
+}
+#buttons button {
+  margin-left: 60px;
+  margin-top: 40px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+  width: 205px;
+  height: 56px;
+  font-size: 24px;
+  font-weight: 400;
+}
+#Signup-btn {
+  background-color: #ffffff !important;
+  border: 2px solid #000000 !important;
+  color: black !important;
+}
