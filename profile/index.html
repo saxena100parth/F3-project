@@ -1,25 +1,39 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name=" viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
-
-    <script src="" async defer></script>
+    <div class="navbar">
+      <div>MeShop</div>
+      <div>
+        <span><a href="../shop/index.html">Home</a></span>
+        <span><a href="../login/index.html">Login</a></span>
+        <span><a href="../signup/index.html">Signup</a></span>
+        <span><a href="../cart/index.html">My Cart</a></span>
+        <span><a href="#">My Profile</a></span>
+      </div>
+    </div>
+    <section>
+      <div id="container">
+        <h1 class="pro-hdr">My Profile</h1>
+        <input type="text" id="fname" placeholder="First Name" />
+        <input type="text" id="lname" placeholder="Last Name" />
+        <span id="err-msg1"></span>
+        <button id="Save">Save Info</button>
+        <h1>Edit Password</h1>
+        <input type="text" id="oldpass" placeholder="Old Password" />
+        <input type="text" id="newpass" placeholder="New Password" />
+        <input type="text" id="cnfpass" placeholder="Confirm New Password" />
+        <span id="err-msg2"></span>
+        <button id="changepass">Change Password</button>
+        <button id="logout">Logout</button>
+      </div>
+    </section>
+    <script src="script.js" async defer></script>
   </body>
 </html>

@@ -5,8 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Razorpay Button</title>
+    <style>
+      h2 {
+        margin-left: 40%;
+      }
+      #rzp-button1 {
+        height: 30px;
+        width: 60px;
+        background-color: rgb(82, 206, 82);
+        color: white;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        margin-left: 48%;
+      }
+      #rzp-button1:hover {
+        background-color: green;
+      }
+    </style>
   </head>
   <body>
+    <h2>Pay Through Online Mode</h2>
     <button id="rzp-button1">Pay</button>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script src="script.js"></script>
