@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MeShop.</title>
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="./script.js"></script>
   </head>
   <body>
-    <!-- nav bar -->
     <nav>
       <div class="brand">
-        <a href="/">MeShop.</a>
+        <a href="#">MeShop.</a>
       </div>
       <div class="nav-items">
-        <a href="/">Home</a>
-        <a href="/login">Login</a>
-        <a href="/signup">Signup</a>
-        <a href="/cart">My Cart</a>
+        <a href="#">Home</a>
+        <a href="#">Login</a>
+        <a href="#">Signup</a>
+        <a href="../cart/index.html">My Cart</a>
+        <a href="../profile/index.html" id="profile">Profile</a>
       </div>
     </nav>
 
     <main>
-      <!-- side content -->
       <aside>
         <section>
           <title>Colors</title>
@@ -91,87 +91,62 @@
         </section>
         <section>
           <title>Price Range</title>
-          <ul>
+          <ul id="priceRange">
             <li>
-              <input id="0-25" type="checkbox" name="prange" />
+              <input id="0-25" type="checkbox" value="25" name="prange" />
               <label for="0-25">$0 to $25</label>
             </li>
             <li>
-              <input id="25-50" type="checkbox" name="prange" />
+              <input id="25-50" type="checkbox" value="50" name="prange" />
               <label for="25-50">$25 to $50</label>
             </li>
             <li>
-              <input id="50-100" type="checkbox" name="prange" />
+              <input id="50-100" type="checkbox" value="100" name="prange" />
               <label for="50-100">$50 to $100</label>
             </li>
             <li>
-              <input id="100on" type="checkbox" name="prange" />
+              <input id="100on" type="checkbox" value="101" name="prange" />
               <label for="100on">$100 onwards</label>
             </li>
           </ul>
+          <button id="filter-item">Apply Filter</button>
         </section>
       </aside>
-      <!-- main contrnt -->
       <main-content>
-        <input type="text" placeholder="Search" />
+        <input type="text" placeholder="Search" id="search-bar" />
         <div class="filters">
-          <div class="filter active">All</div>
-          <div class="filter">Mens</div>
-          <div class="filter">Womens</div>
-          <div class="filter">Jewellery</div>
-          <div class="filter">Electronics</div>
+          <div class="filter all">All</div>
+          <div class="filter filter-men">Mens</div>
+          <div class="filter filter-women">Womens</div>
+          <div class="filter filter-jewelry">Jewellery</div>
+          <div class="filter filter-elect">Electronics</div>
         </div>
+        <div id="allElemnt" class="items"></div>
         <section>
           <title>Men's Clothing</title>
-          <div class="items" id="mens-clothing">
-            <div class="item">
-              <img src="tshirt.png" alt="Item" />
-              <div class="info">
-                <div class="row">
-                  <div class="price">$100</div>
-                  <div class="sized">S,M,L</div>
-                </div>
-                <div class="colors">
-                  Colors:
-                  <div class="row">
-                    <div class="circle" style="background-color: #000"></div>
-                    <div class="circle" style="background-color: #4938af"></div>
-                    <div class="circle" style="background-color: #203d3e"></div>
-                  </div>
-                </div>
-                <div class="row">Rating:</div>
-              </div>
-              <button id="addBtn">Add to Cart</button>
-            </div>
+          <div class="items mens-item">
+            <!-- Items Inserted by dynamically -->
           </div>
         </section>
-
         <section>
           <title>Women's Clothing</title>
-          <div class="items id="women-clothing"">
-            <div class="item">
-              <img src="tshirt.png" alt="Item" />
-              <div class="info">
-                <div class="row">
-                  <div class="price">$100</div>
-                  <div class="sized">S,M,L</div>
-                </div>
-                <div class="colors">
-                  Colors:
-                  <div class="row">
-                    <div class="circle" style="background-color: #000"></div>
-                    <div class="circle" style="background-color: #4938af"></div>
-                    <div class="circle" style="background-color: #203d3e"></div>
-                  </div>
-                </div>
-                <div class="row">Rating:</div>
-              </div>
-              <button id="addBtn">Add to Cart</button>
-            </div>
+          <div class="items womens-item">
+            <!-- Items inserted Dynamically -->
+          </div>
+        </section>
+        <section>
+          <title>Jewellery</title>
+          <div class="items jewellery-item">
+            <!-- Items inserted Dynamically -->
+          </div>
+        </section>
+        <section>
+          <title>Electronics</title>
+          <div class="items electronics-item">
+            <!-- Items inserted Dynamically -->
           </div>
         </section>
       </main-content>
     </main>
-    <script src="script.js"></script>
   </body>
 </html>
